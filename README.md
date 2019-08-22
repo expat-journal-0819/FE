@@ -20,5 +20,9 @@ To setup Dev Environment:
 8. configure end-point at localhost:3000/content 
 use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
+9. Run JSON Server on a different port since React will be using 3000, src\data\json-server -p 4000 db.json
 
-
+10. end points, localhost:3000 React nav page. 
+                localhost:4000/comments
+                localhost:4000/articles
+                
