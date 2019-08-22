@@ -15,7 +15,7 @@ To setup Dev Environment:
 
 6. Create a /img directory in project root
 
-7. yarn add json-server
+7. in root of expat-journal react app,  yarn add json-server
 
 8. configure end-point at localhost:3000/content 
 use this article for a reference https://blog.eleven-labs.com/en/json-server/
