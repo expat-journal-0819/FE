@@ -24,4 +24,7 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 9. end points, localhost:3000 React landing Page. 
                 localhost:4000/comments
                 localhost:4000/articles
-                
+
+10. Yarn Start in root of /expat-journal 
+
+
