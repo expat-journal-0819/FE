@@ -10,19 +10,18 @@ To setup Dev Environment:
 3. yarn add axios
 
 4. add JSON server 
+ in root of expat-journal react app,  yarn global add json-server
 
 5. Create components folder in project root/src
 
 6. Create a /img directory in project root
 
-7. in root of expat-journal react app,  yarn global add json-server
-
-8. configure end-point at localhost:3000/content 
+7. configure end-point at localhost:3000/content 
 use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
-9. Run JSON Server on a different port since React will be using 3000, src\data\json-server -p 4000 db.json
+8. Run JSON Server on a different port since React will be using 3000, src\data\json-server -p 4000 db.json
 
-10. end points, localhost:3000 React landing Page. 
+9. end points, localhost:3000 React landing Page. 
                 localhost:4000/comments
                 localhost:4000/articles
                 
