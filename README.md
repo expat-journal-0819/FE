@@ -22,7 +22,7 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
 9. Run JSON Server on a different port since React will be using 3000, src\data\json-server -p 4000 db.json
 
-10. end points, localhost:3000 React nav page. 
+10. end points, localhost:3000 React landing Page. 
                 localhost:4000/comments
                 localhost:4000/articles
                 
