@@ -1,19 +1,18 @@
 // Landing Page.js 
-import React from 'react';
 import React, {useState,useEffect} from "react";
-import './App.css';
+//import '../../App.css';
 import axios from "axios";
-import LandingPageCard from '../components/LandingPageCard'; 
-import Header from './components/Header';
+import Card from '../components/LandingPageCard'; 
+//import Header from './components/Header';
 
 
-const App = () => {
+const LandingPage = () => {
 
  
   const [data, setData]= useState([]);
   useEffect( () => {   
 
-    axios.get('http:localhost:3001/landing-articles/')
+    axios.get('http://localhost:3001/landing-articles/')
     .then( response => {
       
       setData(response.data.results); 
@@ -42,4 +41,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default LandingPage;

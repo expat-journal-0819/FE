@@ -27,4 +27,6 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
 10. Yarn Start in root of /expat-journal 
 
+11. Add Styled components. yarn add styled-components 
+
 

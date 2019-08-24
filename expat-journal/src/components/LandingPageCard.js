@@ -46,11 +46,8 @@ function Card ({props}) {
             <WrapperDiv>             
             
                            
-                <StyledHeading>Birth Year:   {props.birth_year}</StyledHeading>
-                <StyledHeading>Gender:   {props.gender}</StyledHeading>
-                <StyledHeading>Hair Color:   {props.hair_color}</StyledHeading>
-                <StyledHeading>Skin Color:   {props.skin_color}</StyledHeading>
-                <StyledHeading>Mass:   {props.mass}</StyledHeading>  
+                <StyledHeading>{props.authorName}</StyledHeading>
+                
             
             </WrapperDiv>
     
@@ -58,3 +55,5 @@ function Card ({props}) {
         );    
     
     };    
+
+    export default Card;
