@@ -1,9 +1,8 @@
 // Landing Page.js 
 import React, {useState,useEffect} from "react";
-//import '../../App.css';
 import axios from "axios";
 import Card from '../components/LandingPageCard'; 
-//import Header from './components/Header';
+
 
 
 const LandingPage = () => {
@@ -12,30 +11,27 @@ const LandingPage = () => {
   const [data, setData]= useState([]);
   useEffect( () => {   
 
-    axios.get('http://localhost:3001/landing-articles/')
+    axios.get('http://localhost:3001/landing-articles')
     .then( response => {
       
-      setData(response.data.results); 
+      setData(response.data); 
      
-      console.log(response.data.results)
+      console.log(response.data)
 
     })  
     .catch(error => console.log('You got an error.', error))
   }, []);
 
  
-  return ( 
-
+  return (     
     
-    <div className="App">
 
-    <div className="cards">            
+    <div className="Card">          
     
-        {data.map( key=> (<Card key={key.name} props={key}/>))}
+    
+    {data.map( key=> (<Card key={key.name} props={key}/>))}
                    
-    </div>  
-
-    </div>
+    </div>     
 
     
   );

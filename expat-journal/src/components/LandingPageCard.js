@@ -21,7 +21,7 @@ const WrapperDiv = styled.div`
         box-shadow: 2px 2px 2px 2px red;
         
         h1 {
-               color: red;
+               color: white;
         }
     }
     
@@ -41,17 +41,24 @@ function Card ({props}) {
     return (
         
         
-        <div className="cards">
+        
             
             <WrapperDiv>             
             
                            
+                <StyledHeading>{props.id}</StyledHeading>
+                <StyledHeading>{props.title}</StyledHeading>
+                <StyledHeading>{props.authorId}</StyledHeading>
                 <StyledHeading>{props.authorName}</StyledHeading>
+                <StyledHeading>{props.url}</StyledHeading>
+                <StyledHeading>{props.date}</StyledHeading>
+                <StyledHeading>{props.text}</StyledHeading>
+               
                 
             
             </WrapperDiv>
     
-        </div>
+      
         );    
     
     };    
