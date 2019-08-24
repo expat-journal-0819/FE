@@ -16,8 +16,6 @@ const LandingPage = () => {
       
       setData(response.data); 
      
-      console.log(response.data)
-
     })  
     .catch(error => console.log('You got an error.', error))
   }, []);
@@ -29,7 +27,7 @@ const LandingPage = () => {
     <div className="Card">          
     
     
-    {data.map( key=> (<Card key={key.name} props={key}/>))}
+    {data.map( key=> (<Card key={key.id} props={key}/>))}
                    
     </div>     
 
