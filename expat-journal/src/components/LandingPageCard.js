@@ -12,11 +12,9 @@ const WrapperDiv = styled.div`
     margin: 0 auto;      
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
-    align="left";
- 
+    border-radius: 5px; 
     border: 2px black solid;
-  
+    
 
 `;
 
@@ -38,7 +36,7 @@ const StyledHeading2 = styled.h2`
 const StyledParagraph = styled.p`
 
     font-size .4rem;
-    align: left|justify;
+    align: justify;
 `;
 
 function Card ({props}) {
@@ -58,10 +56,10 @@ function Card ({props}) {
                                 
                 <StyledParagraph>{props.text}</StyledParagraph>
 
-                <a href="#">Read The Post</a>
+                <a href="http://localhost:3001/articles">Read The Post</a>
                
                 </div> 
-                <div><StyledHeading><img src={props.url} height="250" width="350"></img></StyledHeading></div>       
+                <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading></div>       
             </WrapperDiv>
     
       
