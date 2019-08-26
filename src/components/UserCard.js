@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Entries from './Entries';
 
+import { CardContainer } from './Styled';
+
 const UserCard = () => {
   const [data, setData] = useState([]);
 
@@ -18,7 +20,7 @@ const UserCard = () => {
   }, []);
 
   return (
-    <div>
+    <CardContainer>
       {Array.from(data).map(post => (
         <Entries
           title={post.title}
@@ -27,7 +29,7 @@ const UserCard = () => {
           image={post.image}
         />
       ))}
-    </div>
+    </CardContainer>
   );
 };
 
