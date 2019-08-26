@@ -1,8 +1,6 @@
 import React from 'react';
 import {
-  CardColumn,
   Card,
-  CardContainer,
   CardTopRight,
   CardTopLeft,
   CardBottomLeft,
@@ -13,10 +11,15 @@ import {
 
 export default function Entries(props) {
   return (
-    <div>
-      <h3>{props.title}</h3>
-      <h2>{props.date}</h2>
-      <h2>{props.country}</h2>
-    </div>
+    <Card>
+      <TopOfCard>
+        <CardTopLeft>{props.location}</CardTopLeft>
+        <CardTopRight>{props.date}</CardTopRight>
+      </TopOfCard>
+      <BottomOfCard>
+        <CardBottomLeft>{props.title}</CardBottomLeft>
+        <CardBottomRight>&#10084;</CardBottomRight>
+      </BottomOfCard>
+    </Card>
   );
 }

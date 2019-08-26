@@ -36,16 +36,7 @@ export const FollowButton = styled.button`
   height: 40px;
 `;
 
-export const CardContainer = styled.div`
-  margin-top: 100px;
-  margin-bottom: 200px;
-`;
-
-export const CardColumn = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
+// Cards
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,6 +49,7 @@ export const Card = styled.div`
   margin: 20px;
   transition: all 0.5s ease;
   box-shadow: 0px 9px 15px -4px #ccc;
+  background-image: url({props.image});
 
   &:hover {
     transform: scale(1.04);
@@ -90,4 +82,8 @@ export const BottomOfCard = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const FlexFlex = styled.div`
+  display: flex;
 `;

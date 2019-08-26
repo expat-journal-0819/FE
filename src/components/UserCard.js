@@ -20,7 +20,12 @@ const UserCard = () => {
   return (
     <div>
       {Array.from(data).map(post => (
-        <Entries title={post.title} date={post.date} country={post.country} />
+        <Entries
+          title={post.title}
+          date={post.date}
+          location={post.location}
+          image={post.image}
+        />
       ))}
     </div>
   );
