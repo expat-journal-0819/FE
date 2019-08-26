@@ -7,7 +7,7 @@ import {
   FollowButton
 } from './Styled';
 
-import Entries from './Entries';
+import UserCard from './UserCard';
 
 function UserProfile() {
   return (
@@ -22,7 +22,7 @@ function UserProfile() {
           <FollowButton>+ Follow</FollowButton>
         </HeaderRight>
       </Header>
-      <Entries />
+      <UserCard />
     </div>
   );
 }

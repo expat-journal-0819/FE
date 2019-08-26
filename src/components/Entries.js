@@ -1,5 +1,4 @@
 import React from 'react';
-import EntriesData from './EntriesData';
 import {
   CardColumn,
   Card,
@@ -12,107 +11,12 @@ import {
   BottomOfCard
 } from './Styled';
 
-const Entries = () => (
-  <>
-    <EntriesData />
-    <CardContainer>
-      <CardColumn>
-        <Card>
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>
-        </Card>
-        <Card>
-          {' '}
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>{' '}
-        </Card>
-      </CardColumn>
-      <CardColumn>
-        <Card>
-          {' '}
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>{' '}
-        </Card>
-        <Card>
-          {' '}
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>{' '}
-        </Card>
-      </CardColumn>
-      <CardColumn>
-        <Card>
-          {' '}
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>{' '}
-        </Card>
-        <Card>
-          {' '}
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>{' '}
-        </Card>
-      </CardColumn>
-      <CardColumn>
-        <Card>
-          {' '}
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>{' '}
-        </Card>
-        <Card>
-          {' '}
-          <TopOfCard>
-            <CardTopLeft>tleft</CardTopLeft>
-            <CardTopRight>Top right</CardTopRight>
-          </TopOfCard>
-          <BottomOfCard>
-            <CardBottomLeft>B Left</CardBottomLeft>
-            <CardBottomRight>B Right</CardBottomRight>
-          </BottomOfCard>{' '}
-        </Card>
-      </CardColumn>
-    </CardContainer>
-  </>
-);
-
-export default Entries;
+export default function Entries(props) {
+  return (
+    <div>
+      <h3>{props.title}</h3>
+      <h2>{props.date}</h2>
+      <h2>{props.country}</h2>
+    </div>
+  );
+}
