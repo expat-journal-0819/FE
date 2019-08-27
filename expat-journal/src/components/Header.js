@@ -5,7 +5,7 @@ const HeaderDiv = styled.div`
     
     width: 700px;
     height: 50px;
-   
+    margin: 0 auto;
     
 `;
 
@@ -13,7 +13,7 @@ function Header () {
     
     return (
             
-        <HeaderDiv className="Header"></HeaderDiv>    
+        <HeaderDiv className="Header"><h1>EXPAT JOURNAL</h1></HeaderDiv>    
        
         );    
     };
