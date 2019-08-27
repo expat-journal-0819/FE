@@ -51,7 +51,7 @@ const StyledParagraph = styled.p`
 function Card ({props}) {
     
     
-    let url = "/ArticlePage/authorId=" + props.authorId;
+    let url = "/ArticlePage/?authorId=" + props.authorId;
    
 
     return (        
