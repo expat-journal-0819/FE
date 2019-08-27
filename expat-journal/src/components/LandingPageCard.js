@@ -1,7 +1,7 @@
 // Landing Page Card .js
 import React from "react";
 import styled from 'styled-components'; 
-
+import { Link } from 'react-router-dom';
 const WrapperDiv = styled.div`
    
     display: grid;
@@ -46,16 +46,17 @@ const StyledParagraph = styled.p`
     align: justify;
 `;
 
-const StyledAtag = styled.a`
 
-    text-decoration: none;
-
-`;
 
 function Card ({props}) {
     
+    
+    let url = "/ArticlePage/authorId=" + props.authorId;
+   
+
     return (        
         
+            
             
             <WrapperDiv>             
             
@@ -69,7 +70,7 @@ function Card ({props}) {
                                 
                 <StyledParagraph>{props.text}</StyledParagraph>
 
-                <StyledAtag href="./ArticlePage">Read The Post</StyledAtag>
+                <Link to={url}>Read The Post</Link>
                
                 </div> 
                 <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading></div>       
