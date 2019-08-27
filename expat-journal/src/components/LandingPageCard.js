@@ -41,7 +41,7 @@ const StyledParagraph = styled.p`
 
 const StyledAtag = styled.a`
 
-    text-decoration=none;
+    text-decoration: none;
 
 `;
 
