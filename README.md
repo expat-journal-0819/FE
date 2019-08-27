@@ -29,4 +29,6 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
 11. Add Styled components. yarn add styled-components 
 
+12. Add react-router-dom in the root of expat-journal yarn add react-router-dom
+
 
