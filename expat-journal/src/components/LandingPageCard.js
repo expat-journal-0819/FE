@@ -56,7 +56,7 @@ function Card ({props}) {
                                 
                 <StyledParagraph>{props.text}</StyledParagraph>
 
-                <a href="http://localhost:3001/articles">Read The Post</a>
+                <a href="./ArticlePage">Read The Post</a>
                
                 </div> 
                 <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading></div>       
