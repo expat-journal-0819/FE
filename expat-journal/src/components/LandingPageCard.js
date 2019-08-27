@@ -39,6 +39,12 @@ const StyledParagraph = styled.p`
     align: justify;
 `;
 
+const StyledAtag = styled.a`
+
+    text-decoration=none;
+
+`;
+
 function Card ({props}) {
     
     return (        
@@ -46,7 +52,7 @@ function Card ({props}) {
             
             <WrapperDiv>             
             
-                <div>     
+                <div className="oneCard">     
                 
                 <StyledHeading>{props.date}</StyledHeading>
 
@@ -56,7 +62,7 @@ function Card ({props}) {
                                 
                 <StyledParagraph>{props.text}</StyledParagraph>
 
-                <a href="./ArticlePage">Read The Post</a>
+                <StyledAtag href="./ArticlePage">Read The Post</StyledAtag>
                
                 </div> 
                 <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading></div>       
