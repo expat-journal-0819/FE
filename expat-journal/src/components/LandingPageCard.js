@@ -12,16 +12,17 @@ const WrapperDiv = styled.div`
     margin: 0 auto;      
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 10px; 
+    border-radius: 7px; 
     border: 2px black solid;
     &:hover {
 
-        box-shadow: 2px 2px 2px 2px #FFFACD;
+        box-shadow: 2px 2px 2px 2px #FFD700;
                 
     }
 
     background-color: azure;
-
+    
+    margin-bottom: 5px; 
 `;
 
 
