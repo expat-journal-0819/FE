@@ -31,7 +31,7 @@ function UserBar() {
           </Link>
           <span>&mdash;</span>
           <Link to='/following/' style={refs}>
-            20 Following
+            10 Following
           </Link>
         </Divider>
 

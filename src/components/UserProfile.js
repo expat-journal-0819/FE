@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import UserCard from './UserCard';
 import UserBar from './UserBar';
+import Nav from './Nav';
 
 import {
   Header,
@@ -16,13 +17,14 @@ function UserProfile() {
   const [following, setFollowing] = useState('Follow');
   return (
     <>
+      <Nav />
       <Header>
         <ProfileImg src={require('../img/CL.png')} />
         <UserInfo>
           <UserName>Connie Lane</UserName>
           <About>
             <span>@C_Lane</span>
-            <p>Photographer | San Francisco, CA</p>
+            <p>San Francisco, CA</p>
           </About>
         </UserInfo>
         <HeaderRight>

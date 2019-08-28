@@ -5,7 +5,7 @@ export const Header = styled.div`
   display: flex;
   height: 300px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 10px;
   padding: 20px;
   width: 80%;
   justify-content: center;
@@ -13,6 +13,9 @@ export const Header = styled.div`
   border-radius: 20px;
   @media (max-width: 1024px) {
     flex-direction: column;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
   }
 `;
 
@@ -22,6 +25,11 @@ export const ProfileImg = styled.img`
   height: 250px;
   border: 1px solid #f7f7f7;
   border-radius: 50%;
+
+  @media (max-width: 500px) {
+    position: relative;
+    left: 90px;
+  }
 `;
 
 export const UserInfo = styled.div`
@@ -29,6 +37,12 @@ export const UserInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
+
+  @media (max-width: 500px) {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 0;
+  }
 `;
 
 export const UserName = styled.h1`
@@ -86,6 +100,10 @@ export const Card = styled.div`
   box-shadow: 0px 9px 15px -4px #ccc;
   color: white;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 1224px) {
+    width: 80%;
+  }
 
   &:hover {
     transform: scale(1.04);
@@ -178,7 +196,7 @@ export const FollowersContainer = styled.div`
 export const FollowersCards = styled.div`
   background: white;
   color: black;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   height: 1500px;
   display: flex;
@@ -192,7 +210,7 @@ export const FollowersCards = styled.div`
 export const FollowingCards = styled.div`
   background: white;
   color: black;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   height: 1500px;
   display: flex;
@@ -212,12 +230,22 @@ export const CardMargin = {
 
 export const refs = {
   color: '#008B8B',
-  border: '1px solid #f7f9fa',
-  background: '#f7f9fa',
   borderRadius: '25px',
-  padding: '5px 12px'
+  padding: '5px 12px',
+  '&:hover': {
+    textDecoration: 'underline'
+  }
 };
 
 export const BarMargin = {
   marginTop: '30px'
 };
+
+export const NavBar = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 180px;
+  padding-top: 15px;
+`;
