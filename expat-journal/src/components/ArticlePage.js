@@ -2,7 +2,7 @@
 import React, {useState,useEffect } from "react";
 import axios from "axios";
 import ArticleCard from './ArticleComment';
-
+import CommentBox from './ArticleCommentBox';
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
@@ -47,7 +47,10 @@ function ArticlePage () {
       
      
       {data.map( key=> (<ArticleCard key={key.id} props={key}/>)) }
+
       
+      <CommentBox />
+
     </div>     
    
    

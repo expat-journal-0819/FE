@@ -5,6 +5,7 @@
   "dependencies": {
     "json-server": "^0.15.0",
     "react": "^16.9.0",
+    "react-commentbox": "^3.0.1",
     "react-dom": "^16.9.0",
     "react-query-params": "^1.0.9",
     "react-router-dom": "^5.0.1",

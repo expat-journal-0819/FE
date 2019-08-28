@@ -8536,6 +8536,11 @@ react-app-polyfill@^1.0.2:
     regenerator-runtime "0.13.3"
     whatwg-fetch "3.0.0"
 
+react-commentbox@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-commentbox/-/react-commentbox-3.0.1.tgz#81b95640b645a99214ba55320b1cdfc3295c1ec3"
+  integrity sha512-1c6RCdXMUqxMgpbKaf6uIcys6FO1y8FY9BYK2cER/1/uuv1vE2nNvVc2dPIseij8q7/NqgirpnuJ6stA4+/BLQ==
+
 react-dev-utils@^9.0.3:
   version "9.0.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-9.0.3.tgz#7607455587abb84599451460eb37cef0b684131a"
