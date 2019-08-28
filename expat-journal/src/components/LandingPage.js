@@ -11,7 +11,7 @@ const LandingPage = () => {
   const [data, setData]= useState([]);
   useEffect( () => {   
 
-    axios.get('http://localhost:3001/articles')
+    axios.get('http://localhost:4000/articles')
     .then( response => {
       
       setData(response.data); 
