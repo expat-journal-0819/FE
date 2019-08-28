@@ -10,7 +10,9 @@ function App() {
   return (
    
     <div className="App">
-     <Header />
+
+    <Header />
+    
     <Route exact path="/" component={LandingPage} />
 
     <Route path="/ArticlePage" component={ArticlePage} />

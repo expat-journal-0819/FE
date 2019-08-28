@@ -4,6 +4,7 @@ import axios from "axios";
 import ArticleCard from './ArticleComment';
 
 
+
 var getUrlParameter = function getUrlParameter(sParam) {
   var sPageURL = decodeURIComponent(window.location.search.substring(1)),
       sURLVariables = sPageURL.split('&'),
@@ -22,17 +23,15 @@ const theurl = 'http://localhost:3001/articles?id=' + authID;
 
 console.log(theurl);
 
-const ArticlePage = () => {
-
- 
- 
+function ArticlePage () {
+   
   const [data, setData]= useState([]);
   useEffect( () => {   
 
    axios.get(theurl)
     .then( response => {
      
-    setData(response.data); 
+      setData(response.data); 
              
     })  
     .catch(error => console.log('You got an error.', error))
@@ -47,12 +46,11 @@ const ArticlePage = () => {
     <div className="Card">          
       
      
-      {data.map( key=> (<ArticleCard key={key.id} props={key}/>))}
-          
-                   
+      {data.map( key=> (<ArticleCard key={key.id} props={key}/>)) }
+      
     </div>     
    
-    
+   
     
 
     

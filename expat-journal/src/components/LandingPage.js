@@ -15,12 +15,7 @@ const LandingPage = () => {
     .then( response => {
       
       setData(response.data); 
-
-     // let i = 0;
-
-      //for(i in response.data) {
-      //console.log(response.data[i]["comments"])
-    //}
+    
     })  
     .catch(error => console.log('You got an error.', error))
   }, []);
