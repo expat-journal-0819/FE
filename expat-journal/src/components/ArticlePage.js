@@ -1,10 +1,8 @@
 // Article Page .js
-//import React, {useState,useEffect, Component, queryString} from "react";
-import React from "react";
-//import axios from "axios";
-//import ArticleComment from './ArticleComment'; 
+import React, {useState,useEffect } from "react";
+import axios from "axios";
+import ArticleCard from './ArticleComment';
 
- 
 
 var getUrlParameter = function getUrlParameter(sParam) {
   var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -19,28 +17,46 @@ var getUrlParameter = function getUrlParameter(sParam) {
   }
 };
 
-let authid = getUrlParameter('authorId'); 
+const authID = getUrlParameter('authorId'); 
+const theurl = 'http://localhost:3001/articles?id=' + authID;
 
-export default class ArticlePage extends React.Component {
+console.log(theurl);
 
-  render () {
+const ArticlePage = () => {
+
+ 
+ 
+  const [data, setData]= useState([]);
+  useEffect( () => {   
+
+   axios.get(theurl)
+    .then( response => {
+     
+    setData(response.data); 
+             
+    })  
+    .catch(error => console.log('You got an error.', error))
+  },[]);
 
   
+
+
+  return (     
     
     
-    console.log(authid);
+    <div className="Card">          
+      
+     
+      {data.map( key=> (<ArticleCard key={key.id} props={key}/>))}
+          
+                   
+    </div>     
    
-  
-   
-  
+    
+    
 
-    return (
-
-      <div></div>
-    );
-
-   }
-   
+    
+  );
 }
 
-
+export default ArticlePage;
