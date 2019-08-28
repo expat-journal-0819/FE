@@ -1,15 +1,19 @@
 // import React from 'react';
 import styled from 'styled-components';
 
-export const Container = styled.div``;
-
 export const Header = styled.div`
   display: flex;
   height: 300px;
   margin: 0 auto;
   margin-top: 100px;
-  width: 70%;
+  padding: 20px;
+  width: 80%;
   justify-content: center;
+  background: #f7f9fa;
+  border-radius: 20px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 // Left of header
@@ -34,6 +38,13 @@ export const UserName = styled.h1`
 
 export const About = styled.p`
   padding-left: 3px;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: #b1b1b1;
+    font-weight: 600;
+  }
 `;
 
 // Right of header
@@ -66,8 +77,8 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: space-between;
   justify-content: space-between;
-  width: 500px;
-  height: 280px;
+  width: 550px;
+  height: 340px;
   border-radius: 20px;
   background: #f7f7f7;
   margin: 20px;
@@ -131,22 +142,82 @@ export const CardContainer = styled.div`
   margin-bottom: 300px;
 `;
 
-export const UserBar = styled.div`
-  width: 70%;
+export const Bar = styled.div`
+  width: 75%;
   margin: 0 auto;
 
-  p {
-    display: inline;
+  span {
     font-weight: 400;
+    display: inline;
     color: #ccc;
     padding: 0 10px;
   }
+`;
 
-  a {
-    color: #5f9ead;
+export const Sort = styled.div`
+  padding-left: 40px;
+  select {
+    outline: 0;
+    border: 1px solid #ccc;
 
-    &:hover {
-      color: #008b8b;
+    &:active {
+      outline: 0;
+      border: 0;
     }
   }
 `;
+
+export const FollowersContainer = styled.div`
+  position: absolute;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  z-index: 20;
+`;
+
+export const FollowersCards = styled.div`
+  background: white;
+  color: black;
+  width: 100%;
+  margin: 0 auto;
+  height: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 500px) {
+    height: 5000px;
+  }
+`;
+export const FollowingCards = styled.div`
+  background: white;
+  color: black;
+  width: 100%;
+  margin: 0 auto;
+  height: 1500px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 500px) {
+    height: 5000px;
+  }
+`;
+
+export const CardMargin = {
+  margin: '20px',
+  width: '255px'
+};
+
+export const refs = {
+  color: '#008B8B',
+  border: '1px solid #f7f9fa',
+  background: '#f7f9fa',
+  borderRadius: '25px',
+  padding: '5px 12px'
+};
+
+export const BarMargin = {
+  marginTop: '30px'
+};

@@ -12,7 +12,7 @@ const UserCard = () => {
       .get('http://localhost:5000/articles')
       .then(info => {
         setData(info.data);
-        console.log(info.data);
+        // console.log(info.data);
       })
       .catch(err => {
         console.log('Error: ', err);

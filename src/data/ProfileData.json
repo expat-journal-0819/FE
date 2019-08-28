@@ -56,5 +56,91 @@
       "location": "Blue Lagoon, Iceland",
       "image": "https://i.ibb.co/C8tXTKT/bluelagoon.png"
     }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Jacob Angulo",
+      "friends": "5k Followers",
+      "image": "https://i.ibb.co/2K3bMSD/jacob.png",
+      "handle": "@Jacob"
+    },
+    {
+      "id": 2,
+      "name": "Carl Stanley",
+      "friends": "5k Followers",
+      "image": "https://i.ibb.co/DD58fr2/carl.png",
+      "handle": "@Carl"
+    },
+    {
+      "id": 3,
+      "name": "Emily Gauthier",
+      "friends": "5k Followers",
+      "image": "https://i.ibb.co/hW3FZxJ/emily.png",
+      "handle": "@Emily"
+    },
+    {
+      "id": 4,
+      "name": "Michelle Wood",
+      "friends": "42 Followers",
+      "image": "https://i.ibb.co/4KkRQhH/michelle.png",
+      "handle": "@M.Wood"
+    },
+    {
+      "id": 5,
+      "name": "Alex Williamson",
+      "friends": "463 Followers",
+      "image": "https://i.ibb.co/5nswkdG/alex.png",
+      "handle": "@AlexW"
+    },
+    {
+      "id": 6,
+      "name": "Doris Cunningham",
+      "friends": "3,218 Followers",
+      "image": "https://i.ibb.co/PNjFds3/doris.png",
+      "handle": "@DorisCunningham"
+    },
+    {
+      "id": 7,
+      "name": "Adam Ortiz",
+      "friends": "12,352 Followers",
+      "image": "https://i.ibb.co/vsMhB4h/adam.png",
+      "handle": "@AdamCodes"
+    },
+    {
+      "id": 8,
+      "name": "Jasmine Porter",
+      "friends": "32 Followers",
+      "image": "https://i.ibb.co/zJt991f/jasmine.png",
+      "handle": "@Jazzy"
+    },
+    {
+      "id": 9,
+      "name": "Eliza Banks",
+      "friends": "854 Followers",
+      "image": "https://i.ibb.co/zfvnxdL/eliza.png",
+      "handle": "@ElBanks"
+    },
+    {
+      "id": 10,
+      "name": "Joan Gordon",
+      "friends": "383 Followers",
+      "image": "https://i.ibb.co/6yFyjpP/joan.png",
+      "handle": "@JGordon"
+    },
+    {
+      "id": 11,
+      "name": "Carol Jordan",
+      "friends": "764 Followers",
+      "image": "https://i.ibb.co/5hpZP10/carol.png",
+      "handle": "@MsJordan"
+    },
+    {
+      "id": 12,
+      "name": "Barbara Reynolds",
+      "friends": "544 Followers",
+      "image": "https://i.ibb.co/XpqZFRB/barbara.png",
+      "handle": "@BBRA"
+    }
   ]
 }
