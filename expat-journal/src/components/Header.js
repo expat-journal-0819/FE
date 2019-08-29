@@ -19,8 +19,8 @@ function Header () {
                     <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#news">My Profile</a></li>
-                    <li><a href="#contact">Login</a></li>
-                    <li><a href="#contact">Register</a></li>
+                    <li><a href="https://expat-journal-0819.herokuapp.com/api/auth/login">Login</a></li>
+                    <li><a href="https://expat-journal-0819.herokuapp.com/api/auth/register">Register</a></li>
                     <li><a href="#about">About</a></li>
                     </ul>
                     </div>
