@@ -34,18 +34,14 @@
 
 .oneCard {
   
-  background-color: rgb(189, 192, 192);
+  background-color: rgb(168, 193, 216);
   margin: 3px 3px 3px 3px;
   border-radius: 10px;    
-  opacity: .95;
+  opacity: .75;
 
 }
 
-.oneCard img{
-
-  border-radius: 10px;   
-
-}
+ 
 
 button {
   border: none;
@@ -75,8 +71,8 @@ button :focus {
   border-radius: 0.875rem;
   padding: 0.2rem 1rem 2rem;
   border: rgb(13, 14, 14) 2px; 
-  background-color: rgb(189, 192, 192);
-  margin: 3px 3px 3px 3px;
+  background-color: rgb(168, 193, 216);
+  margin: 3px 3px 3px 3px; 
   opacity: .95;
 
 }
@@ -138,6 +134,11 @@ button :focus {
   color: rgb(29, 28, 28);
 }
 
+ img{
+  border: 2px solid #ddd;
+  border-radius: 12px;
+
+}
 .oneCard a:hover{
 
   text-decoration: none;
