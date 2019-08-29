@@ -16,19 +16,18 @@ const WrapperDiv = styled.div`
     border: 2px black solid;
     &:hover {
 
-        box-shadow: 2px 2px 2px 2px  #9ACD32;
+        box-shadow: 2px 2px 2px 2px  rgb(240, 126, 126);
                 
     }
-
-    background-color: azure;
     
+    opacity: .95;
     margin-bottom: 5px; 
 `;
 
 
 const StyledHeading = styled.h1`
 
-    font-size: .4rem;
+    font-size: .75rem;
     color: black;
     
 `;
@@ -42,7 +41,7 @@ const StyledHeading2 = styled.h2`
 
 const StyledParagraph = styled.p`
 
-    font-size .4rem;
+    font-size .75rem;
     align: justify;
 `;
 

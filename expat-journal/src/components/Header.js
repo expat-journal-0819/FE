@@ -24,6 +24,7 @@ function Header () {
                     <li><a href="#about">About</a></li>
                     </ul>
                     </div>
+                     
         </HeaderDiv>    
        
         );    

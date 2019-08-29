@@ -34,8 +34,16 @@
 
 .oneCard {
   
-  background-color: azure;
+  background-color: rgb(189, 192, 192);
   margin: 3px 3px 3px 3px;
+  border-radius: 10px;    
+  opacity: .95;
+
+}
+
+.oneCard img{
+
+  border-radius: 10px;   
 
 }
 
@@ -64,17 +72,20 @@ button :focus {
 .comment-box {
   max-width: 790px;
   color:black;
-  background-color: azure;;
   border-radius: 0.875rem;
   padding: 0.2rem 1rem 2rem;
-  border: darkcyan solid 2px; 
+  border: rgb(13, 14, 14) 2px; 
+  background-color: rgb(189, 192, 192);
+  margin: 3px 3px 3px 3px;
+  opacity: .95;
+
 }
 .comment-form {
   background-color: #fff;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
   padding: 1rem;  
-  border: darkcyan solid 2px; 
+  border: rgb(13, 14, 14) solid 2px; 
 }
 .comment-form-fields {
   margin-bottom: 0.25rem;
@@ -86,13 +97,13 @@ button :focus {
     outline: none;
   }
   .comment-count {
-    color: darkgrey;
+    color: rgb(54, 53, 53);
   }
 
   #comment-reveal {
     float: right;
     background-color: rgb(203, 203, 206);
-    color: #fff;
+    color: rgb(20, 19, 19);
   }
 
   .comment {
@@ -124,6 +135,28 @@ button :focus {
 .oneCard a{
 
   text-decoration: none;
+  color: rgb(29, 28, 28);
+}
+
+.oneCard a:hover{
+
+  text-decoration: none;
+  color: rgb(240, 126, 126);
+}
+
+.oneArticleCard a{
+
+  text-decoration: none;
+  
+  margin: 3px 3px 3px 3px;
+  border-radius: 10px;    
+  opacity: .75;
+
+}
+
+.oneArticleCard img{
+
+  border: black solid 3px; 
 
 }
 
@@ -141,18 +174,25 @@ button :focus {
   flex-direction: row;  
 
 }
+
+.Header h1{
+
+  color: rgb(189, 183, 183);
+  
+}  
 .Header ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 30px 10px 5px 50px;
 }
 
 .Header li {
   display: inline;
+  padding: 5px 10px 5px 10px;
 }
 
 .Header a {
 
   text-decoration: none;
-
+  color: rgb(189, 183, 183);
 }

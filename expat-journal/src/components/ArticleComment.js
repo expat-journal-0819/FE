@@ -17,19 +17,18 @@ const WrapperDiv = styled.div`
     border: 2px black solid;
     &:hover {
 
-        box-shadow: 2px 2px 2px 2px  #9ACD32;
+        box-shadow: 2px 2px 2px 2px  rgb(240, 126, 126);
                 
     }
-
-    background-color: azure;
     
+    opacity: .95;
     margin-bottom: 5px; 
 `;
 
 
 const StyledHeading = styled.h1`
 
-    font-size: .4rem;
+    font-size: .75rem;
     color: black;
     
 `;
@@ -43,7 +42,7 @@ const StyledHeading2 = styled.h2`
 
 const StyledParagraph = styled.p`
 
-    font-size .4rem;
+    font-size .75rem;
     align: justify;
 `;
 
@@ -51,14 +50,14 @@ const StyledParagraph = styled.p`
 
 function ArticleCard ({props}) {
        
-    let url = "/ProfilePage/?authorId=" + props.authorId;
+    let url = "/UserProfile/?authorId=" + props.authorId;
     return (        
         
             
             
             <WrapperDiv>             
             
-                <div className="oneArticleCard">     
+                <div className="oneCard">     
                 
                 <StyledHeading>{props.date}</StyledHeading>
 
@@ -69,10 +68,10 @@ function ArticleCard ({props}) {
                 <StyledParagraph>{props.text}</StyledParagraph>
 
                 <Link to={url}>View This Profile</Link>
-
+                 
                 </div> 
                 <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading> </div>     
-                 <div><CommentBox />  </div>
+                 <div><CommentBox /></div>
                  
             </WrapperDiv>
             
