@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import {
   Card,
   CardTopRight,
@@ -7,20 +7,20 @@ import {
   CardBottomRight,
   TopOfCard,
   BottomOfCard
-} from './Styled';
+} from './Styled'
 
 const hearts = {
   empty: 'https://i.ibb.co/QJSc4PN/icons8-heart-100.png',
   filled: 'https://i.ibb.co/rsGNTJQ/heart-Filled.png'
-};
+}
 
 export default function Entries(props) {
-  const [like, setLike] = useState(`${hearts.empty}`);
+  const [like, setLike] = useState(`${hearts.empty}`)
 
   const BgImg = {
     backgroundImage: `url(${props.image})`,
     backgroundSize: 'cover'
-  };
+  }
 
   return (
     <Card style={BgImg}>
@@ -39,5 +39,5 @@ export default function Entries(props) {
         </CardBottomRight>
       </BottomOfCard>
     </Card>
-  );
+  )
 }

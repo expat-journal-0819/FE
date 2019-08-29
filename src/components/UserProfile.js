@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import UserCard from './UserCard';
-import UserBar from './UserBar';
-import Nav from './Nav';
+import React, { useState } from 'react'
+import UserCard from './UserCard'
+import UserBar from './UserBar'
+import Nav from './Nav'
 
 import {
   Header,
@@ -10,11 +10,12 @@ import {
   HeaderRight,
   ProfileImg,
   UserName,
-  FollowButton
-} from './Styled';
+  FollowButton,
+  MessageButton
+} from './Styled'
 
 function UserProfile() {
-  const [following, setFollowing] = useState('Follow');
+  const [following, setFollowing] = useState('Follow')
   return (
     <>
       <Nav />
@@ -28,6 +29,7 @@ function UserProfile() {
           </About>
         </UserInfo>
         <HeaderRight>
+          <MessageButton>Message</MessageButton>
           <FollowButton onClick={() => setFollowing('Following')}>
             {following}
           </FollowButton>
@@ -36,7 +38,7 @@ function UserProfile() {
       <UserBar />
       <UserCard />
     </>
-  );
+  )
 }
 
-export default UserProfile;
+export default UserProfile

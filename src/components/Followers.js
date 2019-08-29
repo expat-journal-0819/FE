@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { Card, Icon } from 'semantic-ui-react';
-import { FollowersContainer, FollowersCards, CardMargin } from './Styled';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react'
+import { Card, Icon } from 'semantic-ui-react'
+import { FollowersContainer, FollowersCards, CardMargin } from './Styled'
+import axios from 'axios'
 
 function Followers() {
-  const [friends, setFriends] = useState([]);
+  const [friends, setFriends] = useState([])
 
   useEffect(() => {
     axios
       .get('http://localhost:5000/friends')
       .then(info => {
-        setFriends(info.data);
-        console.log(info.data);
+        setFriends(info.data)
+        console.log(info.data)
       })
       .catch(err => {
-        console.log('Error: ', err);
-      });
-  }, []);
+        console.log('Error: ', err)
+      })
+  }, [])
 
   const extra = (
     <a>
       <Icon name='user' />
       View Profile
     </a>
-  );
+  )
   return (
     <FollowersContainer>
       <FollowersCards>
@@ -39,7 +39,7 @@ function Followers() {
         ))}
       </FollowersCards>
     </FollowersContainer>
-  );
+  )
 }
 
-export default Followers;
+export default Followers
