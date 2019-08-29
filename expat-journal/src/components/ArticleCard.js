@@ -65,11 +65,11 @@ function ArticleCard ({props}) {
                 <StyledHeading>Posted by: {props.authorName}</StyledHeading>                
                                 
                 <StyledParagraph>{props.text}</StyledParagraph>
-
+                <img src="https://icon-library.net/images/person-icon-black/person-icon-black-21.jpg" height="20" width="auto" alt="#"></img>
                 <Link to={url}>View This Profile</Link>
                  
                 </div> 
-                <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading> </div>     
+                <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading> </div>     
                  <div><CommentBox /></div>
                  
             </WrapperDiv>

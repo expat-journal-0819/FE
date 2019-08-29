@@ -20,7 +20,7 @@ const WrapperDiv = styled.div`
                 
     }
     
-    opacity: .95;
+    opacity: .90;
     margin-bottom: 5px; 
 `;
 
@@ -46,7 +46,7 @@ const StyledHeading2 = styled.h2`
 function Card ({props}) {
     
     
-    let url = "/ArticlePage/?authorId=" + props.authorId;
+    let url = "/ArticlePage/?id=" + props.id
    
 
     return (        
@@ -61,11 +61,12 @@ function Card ({props}) {
 
                 <StyledHeading2>{props.title}</StyledHeading2>
                 
-                <StyledHeading>Posted by: {props.authorName}</StyledHeading> <br></br>  <br></br>           
+                <StyledHeading>Posted by: {props.authorName}</StyledHeading>             
                                 
-                
+                <img src="https://icon-library.net/images/person-icon-black/person-icon-black-21.jpg" height="20" width="auto" alt="#"></img>
 
-                <Link to={url}>Read The Post</Link>
+
+                <Link to={url} > Read The Post</Link>
                
                 </div> 
                 <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading></div>       
