@@ -67,7 +67,7 @@ function Card ({props}) {
                 <img src="https://icon-library.net/images/person-icon-black/person-icon-black-21.jpg" height="20" width="auto" alt="#"></img>
 
 
-                <Link to="/ArticlePage?id=1"> Read The Post</Link>
+                <Link to={url}> Read The Post</Link>
                
                 </div> 
                 <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading></div>       
