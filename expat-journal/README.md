@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Expat-Journal
+Expat-Journal BW 2
 
-## Available Scripts
+To setup Dev Environment:
 
-In the project directory, you can run:
+1. in root yarn install, 
 
-### `npm start`
+2. yarn create react-app expat-journal
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. yarn add axios
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+4. add JSON server 
+ in root of expat-journal react app,  yarn global add json-server
 
-### `npm test`
+5. Create components folder in project root/src
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. Create a /img directory in project root
 
-### `npm run build`
+7. configure end-point at localhost:3000/content 
+use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+8. Run JSON Server on a different port since React will be using 3000, src\data\json-server -p 4000 db.json
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+9. end points, localhost:3000 React landing Page. 
+               localhost:4000/articles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+10. Yarn Start in root of /expat-journal 
 
-### `npm run eject`
+11. Add Styled components. yarn add styled-components 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+12. Add react-router-dom in the root of expat-journal yarn add react-router-dom
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+13. yarn add semantic-ui-react
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+14. To start the app, first navigate 

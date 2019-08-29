@@ -30,8 +30,6 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
 12. Add react-router-dom in the root of expat-journal yarn add react-router-dom
 
-13. **** Add query-string, yarn add react-query-params
+13. yarn add semantic-ui-react
 
-14. **** yarn add simple-react-comments
-
-15. yarn add semantic-ui-react
+14. To start the app, first navigate 
