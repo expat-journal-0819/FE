@@ -56,7 +56,7 @@ function ArticleCard ({props}) {
             
             <WrapperDiv>             
             
-                <div className="oneCard">     
+            <div className="oneCard">     
                 
                 <StyledHeading>{props.date}</StyledHeading>
 
@@ -70,7 +70,7 @@ function ArticleCard ({props}) {
                  
                 </div> 
                 <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading> </div>     
-                 <div><CommentBox /></div>
+                <div><CommentBox /></div>
                  
             </WrapperDiv>
             
