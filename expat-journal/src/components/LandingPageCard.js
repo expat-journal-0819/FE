@@ -2,6 +2,7 @@
 import React from "react";
 import styled from 'styled-components'; 
 import { Link } from 'react-router-dom';
+import ArticlePage from "./ArticlePage";
 const WrapperDiv = styled.div`
    
     display: grid;
@@ -46,7 +47,7 @@ const StyledHeading2 = styled.h2`
 function Card ({props}) {
     
     
-    let url = "/ArticlePage/?id=" + props.id
+   let url = "/ArticlePage?id=" + props.id
    
 
     return (        
@@ -66,7 +67,7 @@ function Card ({props}) {
                 <img src="https://icon-library.net/images/person-icon-black/person-icon-black-21.jpg" height="20" width="auto" alt="#"></img>
 
 
-                <Link to={url} > Read The Post</Link>
+                <Link to="/ArticlePage?id=1" id={props.id}> Read The Post</Link>
                
                 </div> 
                 <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading></div>       

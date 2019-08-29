@@ -6,11 +6,10 @@ import ArticleCard from './ArticleCard';
 
 const ArticlePage = () => {
 
- 
   const [data, setData]= useState([]);
-  useEffect( () => {   
 
-    axios.get('http://localhost:4000/articles/?id=1')
+  useEffect( () => {   
+    axios.get('http://localhost:4000/articles')
     .then( response => {
       
       setData(response.data); 

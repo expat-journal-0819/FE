@@ -15,7 +15,7 @@ function App() {
     
     <Route exact path="/" component={LandingPage} />
 
-    <Route path="/ArticlePage" component={ArticlePage} />
+    <Route path="/ArticlePage/:id" component={ArticlePage} />
 
     {/* add routing for profile here*/}
        
