@@ -29,9 +29,9 @@ class CommentBox extends React.Component {
       
       return(
         <div className="comment-box">
-          <h2>Join the Discussion!</h2>
+          <h2>Comment on This Post</h2>
           <CommentForm addComment={this._addComment.bind(this)}/>
-          <button id="comment-reveal" onClick={this._handleClick.bind(this)}>
+          <button id="comment-reveal" display="none" onClick={this._handleClick.bind(this)}>
             {buttonText}
           </button>
           <h3>Comments</h3>
@@ -49,7 +49,7 @@ class CommentBox extends React.Component {
         author,
         body
       };
-      this.setState({ comments: this.state.comments.concat([comment]) }); // *new array references help React stay fast, so concat works better than push here.
+      this.setState({ comments: this.state.comments.concat([comment]) }); 
     }
     
     _handleClick() {

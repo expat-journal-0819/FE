@@ -2,13 +2,14 @@
 import React from "react";
 import styled from 'styled-components'; 
 import { Link } from 'react-router-dom';
+import CommentBox from './ArticleCommentBox';
 const WrapperDiv = styled.div`
    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 10px 10px 10px 10px;
     width: 800px;
-    height: 300px;
+    height: auto;
     margin: 0 auto;      
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -57,7 +58,7 @@ function ArticleCard ({props}) {
             
             <WrapperDiv>             
             
-                <div className="oneCard">     
+                <div className="oneArticleCard">     
                 
                 <StyledHeading>{props.date}</StyledHeading>
 
@@ -70,9 +71,11 @@ function ArticleCard ({props}) {
                 <Link to={url}>View This Profile</Link>
 
                 </div> 
-                <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading></div>       
+                <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading> </div>     
+                 <div><CommentBox />  </div>
+                 
             </WrapperDiv>
-    
+            
       
         );    
     

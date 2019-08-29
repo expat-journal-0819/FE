@@ -62,17 +62,19 @@ button :focus {
 }
 
 .comment-box {
-  max-width: 37.5rem;
-  color: #fff;
-  background-color: #909090;
+  max-width: 790px;
+  color:black;
+  background-color: azure;;
   border-radius: 0.875rem;
   padding: 0.2rem 1rem 2rem;
+  border: darkcyan solid 2px; 
 }
 .comment-form {
   background-color: #fff;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
   padding: 1rem;  
+  border: darkcyan solid 2px; 
 }
 .comment-form-fields {
   margin-bottom: 0.25rem;
@@ -89,7 +91,7 @@ button :focus {
 
   #comment-reveal {
     float: right;
-    background-color: blue;
+    background-color: rgb(203, 203, 206);
     color: #fff;
   }
 
@@ -122,5 +124,35 @@ button :focus {
 .oneCard a{
 
   text-decoration: none;
-  
+
+}
+
+.oneArticleCard {
+   
+  margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+
+}
+
+.Header {
+
+  display: flex;
+  flex-direction: row;  
+
+}
+.Header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Header li {
+  display: inline;
+}
+
+.Header a {
+
+  text-decoration: none;
+
 }

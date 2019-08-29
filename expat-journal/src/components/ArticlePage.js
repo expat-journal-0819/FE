@@ -2,7 +2,7 @@
 import React, {useState,useEffect } from "react";
 import axios from "axios";
 import ArticleCard from './ArticleComment';
-import CommentBox from './ArticleCommentBox';
+
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
@@ -21,7 +21,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 const authID = getUrlParameter('authorId'); 
 const theurl = 'http://localhost:4000/articles?id=' + authID;
 
-console.log(theurl);
+//console.log(theurl);
 
 function ArticlePage () {
    
@@ -46,11 +46,9 @@ function ArticlePage () {
     <div className="Card">          
       
      
-      {data.map( key=> (<ArticleCard key={key.id} props={key}/>)) }
-
-      
-      <CommentBox />
-
+      {data.map( key=> (<ArticleCard key={key.id} props={key}/>)) }      
+       
+     
     </div>     
    
    
