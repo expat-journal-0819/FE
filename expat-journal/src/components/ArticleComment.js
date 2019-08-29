@@ -29,17 +29,16 @@ const WrapperDiv = styled.div`
 const StyledHeading = styled.h1`
 
     font-size: .75rem;
-    color: black;
+    color: white;
     
 `;
 
 const StyledHeading2 = styled.h2`
 
     font-size: 1.5rem;
-    color: black;
+    color: white;
     
 `;
-
 const StyledParagraph = styled.p`
 
     font-size .75rem;

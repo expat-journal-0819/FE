@@ -28,22 +28,18 @@ const WrapperDiv = styled.div`
 const StyledHeading = styled.h1`
 
     font-size: .75rem;
-    color: black;
+    color: white;
     
 `;
 
 const StyledHeading2 = styled.h2`
 
     font-size: 1.5rem;
-    color: black;
+    color: white;
     
 `;
 
-const StyledParagraph = styled.p`
 
-    font-size .75rem;
-    align: justify;
-`;
 
 
 
@@ -60,14 +56,14 @@ function Card ({props}) {
             <WrapperDiv>             
             
                 <div className="oneCard">     
-                
+                <br></br> 
                 <StyledHeading>{props.date}</StyledHeading>
 
                 <StyledHeading2>{props.title}</StyledHeading2>
                 
-                <StyledHeading>Posted by: {props.authorName}</StyledHeading>                
+                <StyledHeading>Posted by: {props.authorName}</StyledHeading> <br></br>  <br></br>           
                                 
-                <StyledParagraph>{props.text}</StyledParagraph>
+                
 
                 <Link to={url}>Read The Post</Link>
                
