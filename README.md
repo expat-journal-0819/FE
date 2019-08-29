@@ -22,7 +22,7 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 8. Run JSON Server on a different port since React will be using 3000, src\data\json-server -p 4000 db.json
 
 9. end points, localhost:3000 React landing Page. 
-               localhost:3001/articles
+               localhost:4000/articles
 
 10. Yarn Start in root of /expat-journal 
 
@@ -32,4 +32,6 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 
 13. **** Add query-string, yarn add react-query-params
 
-14. yarn add simple-react-comments
+14. **** yarn add simple-react-comments
+
+15. yarn add semantic-ui-react

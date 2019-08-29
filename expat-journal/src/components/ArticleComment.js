@@ -1,7 +1,7 @@
 // Landing Page Card .js
 import React from "react";
 import styled from 'styled-components'; 
-
+import { Link } from 'react-router-dom';
 const WrapperDiv = styled.div`
    
     display: grid;
@@ -50,7 +50,7 @@ const StyledParagraph = styled.p`
 
 function ArticleCard ({props}) {
        
-
+    let url = "/ProfilePage/?authorId=" + props.authorId;
     return (        
         
             
@@ -66,7 +66,9 @@ function ArticleCard ({props}) {
                 <StyledHeading>Posted by: {props.authorName}</StyledHeading>                
                                 
                 <StyledParagraph>{props.text}</StyledParagraph>
-                              
+
+                <Link to={url}>View This Profile</Link>
+
                 </div> 
                 <div><StyledHeading><img src={props.url} height="250" width="350" alt="#"></img></StyledHeading></div>       
             </WrapperDiv>

@@ -118,3 +118,9 @@ button :focus {
   color: blue;
   font-weight: bold;
 }
+
+.oneCard a{
+
+  text-decoration: none;
+  
+}

@@ -19,7 +19,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 const authID = getUrlParameter('authorId'); 
-const theurl = 'http://localhost:3001/articles?id=' + authID;
+const theurl = 'http://localhost:4000/articles?id=' + authID;
 
 console.log(theurl);
 
