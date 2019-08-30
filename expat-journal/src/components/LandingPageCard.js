@@ -29,14 +29,14 @@ const WrapperDiv = styled.div`
 const StyledHeading = styled.h1`
 
     font-size: .75rem;
-    color: white;
+    color: whitesmoke;
     
 `;
 
 const StyledHeading2 = styled.h2`
 
     font-size: 1.5rem;
-    color: white;
+    color: whitesmoke;
     
 `;
 

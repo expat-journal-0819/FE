@@ -17,8 +17,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   
   .oneCard p{
 
-    color: white;
-    border: white .5px solid;
+    color: whitesmoke;
+    border: whitesmoke .5px solid;
     padding: 3px 3px;
     
 
@@ -47,6 +47,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
     outline: none;
   }
   
+  .comment-list {
+
+    background-color: rgb(235, 217, 217);
+    color:rgb(44, 39, 39);
+    border: black dashed 1px;
+  }
   .comment-box {
     width: 325px;
     color:whitesmoke;
