@@ -34,3 +34,13 @@ use this article for a reference https://blog.eleven-labs.com/en/json-server/
 13. yarn add semantic-ui-react
 
 14. To start the app, first navigate to /src/data type json-server -p 4000 landingdata.json, the same with -p 5000 {file name unknown at the moment} 
+
+To run the app: 
+
+1. VS Code terminal > Split terminal > 3 terminals
+2. first terminal cd src/data
+3. json server -p 5000 ProfileData.json
+4. second terminal cd src/data
+5. json server -p 4000 landingdata.json
+6. third terminal yarn start
+7. right click index.hml run with live server
