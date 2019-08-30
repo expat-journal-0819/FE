@@ -1,0 +1,395 @@
+/*css styles!*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+}
+.mainNav{
+	display: flex;
+	justify-content: space-between;
+    text-decoration: none;
+    padding: 15px;
+	font-size: 1rem;
+}
+
+a{
+	text-decoration: none;
+    color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 2px; 
+}
+a:hover{
+	background-image: radial-gradient(circle, #ffd700, #ecd604, #d9d50f, #c6d31a, #b3d125, #96cd3a, #7ac74b, #5fc15a, #33b670, #00a880, #009a8a, #008b8b);
+	color: red;
+}
+
+.signUp{
+	float: right;
+      
+}
+.home{
+	background: url(images/travel.jpg);
+	background-size: 100%;
+}
+.homepg{
+	width: 100%;
+	display: flexbox;
+}
+.homepg h1{
+	display: flex;
+	justify-content: flex-start;
+	width: 15%;
+	border-radius: 10%;
+	font-style: oblique;
+	background-image: radial-gradient(circle, #ffd700, #ecd604, #d9d50f, #c6d31a, #b3d125, #96cd3a, #7ac74b, #5fc15a, #33b670, #00a880, #009a8a, #008b8b);
+	font-size: 2.5rem;
+}
+
+.Welcome, .Welcome2 {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 25px;
+}	
+
+.Welcome h2, .Welcome2 h2{
+	font-size: 1.5rem;
+	color:black;
+}
+
+.Welcome p, .Welcome2 p {
+	font-size: 15px;
+	margin-top: 30px;
+}
+button {
+	outline: 1px solid transparent;
+	width: 10%;
+	height: 40px;
+	background-color: rgba(124, 121, 121, 0.5);
+	box-shadow: -3px 3px darkcyan, -2px 2px darkolivegreen, -1px 1px darkolivegreen;
+    border: 1px solid gold;
+	color: white;
+	margin-top: 15px;
+	padding: 25px, 80px;
+	position: relative;
+	right: 300px;
+	top: 50px;
+	cursor: pointer;
+}
+button:hover{
+	background-image: radial-gradient(circle, #ffd700, #ecd604, #d9d50f, #c6d31a, #b3d125, #96cd3a, #7ac74b, #5fc15a, #33b670, #00a880, #009a8a, #008b8b);
+	color: purple;
+}
+
+.boxes {
+	display: flex; 
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	height: 20%;
+	/*background: url(images/travel.jpg),#fff4f0;*/
+    background-size: 100%;
+}
+.boxes-box1 {
+    border: 1px solid black;
+    width: 500px;
+    height: 250px;
+    margin: 40px 30px 20px 80px; ;
+	padding: 20px;
+	color: white;
+	background:rgba(78, 75, 75, 0.5);
+}
+.boxes h3 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.boxes p {
+    font-size: 15px;
+}
+.boxes-box2 {
+    border: 1px solid black;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    margin-left: 10px;
+	margin-top: 20px;
+	color: white;
+	background:rgba(78, 75, 75, 0.5);
+    
+}
+.boxes-box3 {
+    border: 1px solid black;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+	margin-left: 110px;
+	color: white;
+	background:rgba(78, 75, 75, 0.5);
+    
+}
+.boxes-box4 {
+    border: 1px solid black;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 46px;
+	margin-top: 35px;
+	color: white;
+	background:rgba(78, 75, 75, 0.5);
+}
+
+@media/*HOME PAGE MOBILE*/ (max-width: 500px){
+	a {
+		color: white;
+	}
+	.homepg{
+		background:rgba(78, 75, 75, 0.5);
+	}
+	.homepg h1{
+		width: 49%;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.Welcome, .Welcome2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		margin-bottom: 25px;
+	}	
+	.Welcome h2, .Welcome2 h2{
+		font-size: 1.5rem;
+		color: white;
+	}
+	.Welcome p, .Welcome2 p {
+		font-size: 1rem;
+		color: yellow;
+	}
+	button{
+		margin-left: 370px;
+		position: relative;
+		width: 40%;
+		top: 50px;
+	}
+	.boxes{
+		display: flex;
+		width: 100%;
+	}
+	.boxes-box1, .boxes-box2, .boxes-box3, .boxes-box4 {
+		border: 1px solid black;
+		width: 500px;
+		height: 250px;
+		margin: 40px 30px 20px 40px; ;
+		padding: 20px;
+		color: white;
+		background:rgba(78, 75, 75, 0.5);
+	}
+}
+/* About us page code below*/
+.whole{
+	background: url(images/mountains.jpg);
+	background-size: 100%;
+}
+
+.Main-content{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	height: 20%;
+}
+.Main-content h2{
+	font-style: oblique;
+	font-size: 2rem;
+	text-align: center;
+	
+}
+
+.about-us{
+	border: 1px solid black;
+    width: 500px;
+    height: 259px;
+    margin: 40px 30px 20px 80px; ;
+	padding: 20px;
+	color: white;
+	background:rgba(22, 22, 22, 0.5);
+}
+.Carl {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about-us2{
+	border: 1px solid black;
+    width: 500px;
+    height: 259px;
+    padding: 20px;
+    margin-left: 10px;
+	margin-top: 20px;
+	color: white;
+	background:rgba(78, 75, 75, 0.5);
+}
+.elijah {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about-us3{
+	border: 1px solid black;
+    width: 500px;
+    height: 259px;
+    padding: 20px;
+	margin-left: 110px;
+	color: white;
+	background:rgba(78, 75, 75, 0.5);
+}
+.emily{
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about-us4{
+    border: 1px solid black;
+    width: 500px;
+    height: 259px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 46px;
+	margin-top: 35px;
+	color: white;
+	background:rgba(78, 75, 75, 0.5);
+}
+.Jacob {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer {
+	color:hotpink;
+	font-style: bold;
+	position: absolute;
+	bottom: 1px;
+	left: 800px;
+	background:rgba(78, 75, 75, 0.5);
+}
+@media /*ABOUT US MOBILE*/ (max-width: 500px){
+	.whole{
+		background-image: url(images/astronomy.jpg);
+	}
+	
+	.about-us, .about-us2, .about-us3, .about-us4, .about-us5 {
+		border: 1px solid black;
+		width: 500px;
+		height: 250px;
+		margin: 40px 30px 20px 40px; ;
+		padding: 20px;
+		background:rgba(78, 75, 75, 0.5);
+	}
+	.footer{
+		position: absolute;
+		left: 185px;
+		top: 1350px;
+	}
+}
+
+/*CONTACT CSS*/
+body{
+	background-image: radial-gradient(circle, #ffd700, #ecd604, #d9d50f, #c6d31a, #b3d125, #96cd3a, #7ac74b, #5fc15a, #33b670, #00a880, #009a8a, #008b8b);
+}
+.contact{
+	display: flex;
+	justify-content: center;
+}
+.contact h1 {
+	color: lemonchiffon;
+	font-style: oblique;
+	font-size: 25px;
+}
+.contact p {
+	position: absolute;
+	top: 80px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid gold;
+	border-radius: 4px; 
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px; 
+	resize: vertical;
+  }
+  input[type=submit] {
+	background-color:yellowgreen;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  input[type=submit]:hover {
+	background-color: darkcyan;
+  }
+  .container {
+	border-radius: 5px;
+	padding: 20px;
+  }

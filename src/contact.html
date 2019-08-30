@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!--This page was just a learning thing for me and I wanted to do this-->
+        <nav class="mainNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a> 
+                <a href="contact.html"> Contact Us</a>
+                    <div class="signUp">
+                        <a href="http://localhost:3000">Login</a>
+                    </div>
+            </nav>
+    <div class="contact">
+        <h1>Have Questions?</h1>
+
+        <p>Feel free to contact us!</p>
+    </div>
+<div class="container">
+    <form action="action_page.php">
+        <label for="firstname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <!--Just added some popular countries to add some more options-->
+          <option value="canada">Canada</option>
+          <option value="usa">United States</option>
+          <option value="china">China</option>
+          <option value="italy">Italy</option>
+          <option value="uk">United Kingdom</option>
+          <option value="thailand">Thailand</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
