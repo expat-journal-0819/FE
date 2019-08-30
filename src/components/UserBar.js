@@ -4,6 +4,7 @@ import Following from './Following'
 import { Divider } from 'semantic-ui-react'
 import { Bar, Sort, refs, BarMargin } from './Styled'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import UserCard from './UserCard'
 
 function Posts() {
   return (
@@ -22,7 +23,7 @@ function UserBar() {
     <Router>
       <Bar style={BarMargin}>
         <Divider horizontal>
-          <Link to='/' style={refs} className='refz'>
+          <Link to='/user' style={refs} className='refz'>
             8 Posts
           </Link>
           <span>&mdash;</span>
@@ -35,7 +36,7 @@ function UserBar() {
           </Link>
         </Divider>
 
-        <Route path='/' exact component={Posts} />
+        <Route path='/user/' exact component={UserCard} />
         <Route path='/followers/' component={Followers} />
         <Route path='/following/' component={Following} />
       </Bar>

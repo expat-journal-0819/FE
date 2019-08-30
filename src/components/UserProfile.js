@@ -4,6 +4,7 @@ import UserBar from './UserBar'
 import Nav from './Nav'
 
 import {
+  Container,
   Header,
   UserInfo,
   About,
@@ -17,7 +18,8 @@ import {
 function UserProfile() {
   const [following, setFollowing] = useState('Follow')
   return (
-    <>
+    <div>
+      <Container>
       <Nav />
       <Header>
         <ProfileImg src={require('../img/CL.png')} />
@@ -36,8 +38,8 @@ function UserProfile() {
         </HeaderRight>
       </Header>
       <UserBar />
-      <UserCard />
-    </>
+      </Container>
+    </div>
   )
 }
 

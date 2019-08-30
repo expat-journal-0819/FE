@@ -2,21 +2,26 @@
 import styled from 'styled-components'
 
 export const Header = styled.div`
-  display: flex;
-  height: 300px;
+         display: flex;
+         height: 300px;
+         margin: 0 auto;
+         margin-top: 10px;
+         padding: 20px;
+         width: 80%;
+         justify-content: center;
+         background: #b7b7b752;
+         border-radius: 20px;
+         @media (max-width: 1024px) {
+           flex-direction: column;
+         }
+         @media (max-width: 500px) {
+           width: 100%;
+         }
+       `
+
+export const Container = styled.div`
+  background: rgba(255, 255, 255, 0.851);
   margin: 0 auto;
-  margin-top: 10px;
-  padding: 20px;
-  width: 80%;
-  justify-content: center;
-  background: linear-gradient(to right, transparent, #f7f9fa, transparent);
-  border-radius: 20px;
-  @media (max-width: 1024px) {
-    flex-direction: column;
-  }
-  @media (max-width: 500px) {
-    width: 100%;
-  }
 `
 
 // Left of header
@@ -166,11 +171,11 @@ export const CardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: 300px;
+  width: 100%;
 `
 
 export const Bar = styled.div`
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 
   span {
@@ -196,41 +201,25 @@ export const Sort = styled.div`
 `
 
 export const FollowersContainer = styled.div`
-  position: absolute;
   left: 0;
-  background: #fff;
-  width: 100%;
-  z-index: 20;
+  background: transparent;
+  width: 90%;
+  margin: 0 auto;
 `
 
 export const FollowersCards = styled.div`
-  background: white;
   color: black;
-  width: 80%;
-  margin: 0 auto;
-  height: 1500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  @media (max-width: 500px) {
-    height: 5000px;
-  }
 `
 export const FollowingCards = styled.div`
-  background: white;
   color: black;
-  width: 80%;
   margin: 0 auto;
-  height: 1500px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
-
-  @media (max-width: 500px) {
-    height: 5000px;
-  }
 `
 
 export const CardMargin = {
@@ -240,8 +229,9 @@ export const CardMargin = {
 
 export const refs = {
   color: '#008B8B',
-  borderRadius: '25px',
-  padding: '5px 12px'
+  borderRadius: '5px',
+  padding: '10px 12px',
+  fontSize: '1.2rem'
 }
 
 export const BarMargin = {

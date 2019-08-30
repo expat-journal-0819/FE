@@ -1,9 +1,17 @@
+body {
+    background: url('https://i.ibb.co/4pMKFz5/adventure-automobile-classic-2533092.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 button:hover {
     cursor: pointer;
-    opacity: .9;
+    opacity: .8;
+    transition: all .5s ease;
 }
 
 .refz:hover {
-    background: #ebedee;
-    transition: all .5s ease;
+    background: white;
+    transition: all .8s ease;
 }
