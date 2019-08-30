@@ -14,7 +14,7 @@ const WrapperDiv = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 7px; 
-    border: 2px black solid;
+    border: 1px darkgrey solid;
     &:hover {
 
         box-shadow: 2px 2px 2px 2px  rgb(240, 126, 126);
@@ -57,7 +57,10 @@ function ArticleCard ({props}) {
             <WrapperDiv>             
             
             <div className="oneCard">     
-            <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading> </div> 
+            <div>
+                
+                <StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading> </div> 
+                
                 <StyledHeading>{props.date}</StyledHeading>
 
                 <StyledHeading2>{props.title}</StyledHeading2>
@@ -65,10 +68,12 @@ function ArticleCard ({props}) {
                 <StyledHeading>Posted by: {props.authorName}</StyledHeading>                
                                 
                 <StyledParagraph>{props.text}</StyledParagraph>
+                
                 <img src="https://icon-library.net/images/person-icon-black/person-icon-black-21.jpg" height="20" width="auto" alt="#"></img>
+                
                 <Link to={url}>View This Profile</Link>
                 
-                </div> 
+             </div> 
                     
                 <div><CommentBox /></div>
                  

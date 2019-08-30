@@ -9,7 +9,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin: 3px 3px 3px 3px;
     border-radius: 10px;    
     opacity: .75;
-    border: dashed .5px whitesmoke;
+    border: .5px darkgrey solid;
     height: 250px;
     width: 350px;
   }
@@ -52,7 +52,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     border-radius: 0.875rem;
     padding: 0.2rem 1rem 2rem;
     border: rgb(13, 14, 14) 2px; 
-    background-color: rgb(195, 202, 209);
+    background-color: rgb(194, 160, 146);
     margin: 3px 3px 3px 3px; 
     opacity: .70;
   
