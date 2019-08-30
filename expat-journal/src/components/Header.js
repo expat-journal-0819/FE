@@ -19,7 +19,7 @@ function Header () {
                     <div>
                     <ul>
                     <li><a href="http://localhost:3000">Home</a></li>
-                    <li><a href="#news">My Profile</a></li>
+                    <li><a href="http://localhost:3000/UserProfile">My Profile</a></li>
                     <li><a href="https://expat-journal-0819.herokuapp.com/api/auth/login">Login</a></li>
                     <li><a href="https://expat-journal-0819.herokuapp.com/api/auth/register">Register</a></li>
                     <li><a href="#about">About</a></li>

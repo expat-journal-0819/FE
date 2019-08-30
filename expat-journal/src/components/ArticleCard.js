@@ -49,7 +49,7 @@ const StyledParagraph = styled.p`
 
 function ArticleCard ({props}) {
        
-    let url = "/UserProfile/?authorId=" + props.authorId;
+    let url = "/UserProfile"
     return (        
         
             
