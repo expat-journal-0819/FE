@@ -10,8 +10,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
     border-radius: 10px;    
     opacity: .75;
     border: .5px darkgrey solid;
-    height: 250px;
+    height: auto;
     width: 350px;
+    
   }
   
   .oneCard p{
@@ -48,25 +49,27 @@ body {font-family: Arial, Helvetica, sans-serif;}
   
   .comment-box {
     width: 325px;
-    color:black;
+    color:whitesmoke;
     border-radius: 0.875rem;
     padding: 0.2rem 1rem 2rem;
     border: rgb(13, 14, 14) 2px; 
-    background-color: rgb(194, 160, 146);
+    
     margin: 3px 3px 3px 3px; 
     opacity: .70;
+    height: auto;
   
   }
   .comment-form {
-    background-color: #fff;
+    background-color: rgb(235, 217, 217);
     border-radius: 0.25rem;
     margin-bottom: 2rem;
     padding: 1rem;  
-    border: rgb(13, 14, 14) solid 2px; 
+    border: dashed .5px black; 
+    opacity: .70;
   }
   .comment-form-fields {
-    margin-bottom: 0.25rem;
-    
+    margin-bottom: 0.5rem;
+    width: 90%;
     }
   
     .comment-form-fields :focus {
@@ -74,13 +77,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
       outline: none;
     }
     .comment-count {
-      color: rgb(54, 53, 53);
+      color: whitesmoke;
     }
   
     #comment-reveal {
       float: right;
       background-color: rgb(203, 203, 206);
-      color: rgb(20, 19, 19);
+      color: rgb(44, 43, 43);
     }
   
     .comment {
