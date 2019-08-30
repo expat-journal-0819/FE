@@ -70,7 +70,7 @@ function Card ({props}) {
                 <Link to={url}> Read The Post</Link>
                
                 </div> 
-                <div><StyledHeading><img src={props.url} height="auto" width="375" alt="#"></img></StyledHeading></div>       
+                <div><StyledHeading><img src={props.url} height="250" width="375" alt="#"></img></StyledHeading></div>       
             </WrapperDiv>
     
       

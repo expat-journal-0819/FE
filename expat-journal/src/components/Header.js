@@ -15,6 +15,7 @@ function Header () {
             
 
         <HeaderDiv className="Header"><div><h1>EXPAT JOURNAL</h1></div>
+                    
                     <div>
                     <ul>
                     <li><a href="http://localhost:3000">Home</a></li>
