@@ -34,7 +34,7 @@ class CommentBox extends React.Component {
           <button id="comment-reveal" display="none" onClick={this._handleClick.bind(this)}>
             {buttonText}
           </button>
-          <h3>Comments</h3>
+         
           <h4 className="comment-count">
             {this._getCommentsTitle(comments.length)}
           </h4>
