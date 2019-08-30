@@ -23,7 +23,7 @@ function UserBar() {
     <Router>
       <Bar style={BarMargin}>
         <Divider horizontal>
-          <Link to='/user' style={refs} className='refz'>
+          <Link to='/' style={refs} className='refz'>
             8 Posts
           </Link>
           <span>&mdash;</span>
@@ -36,7 +36,7 @@ function UserBar() {
           </Link>
         </Divider>
 
-        <Route path='/user/' exact component={UserCard} />
+        <Route path='/' exact component={UserCard} />
         <Route path='/followers/' component={Followers} />
         <Route path='/following/' component={Following} />
       </Bar>
