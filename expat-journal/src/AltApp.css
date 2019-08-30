@@ -47,14 +47,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
   
   .comment-box {
-    max-width: 790px;
+    width: 325px;
     color:black;
     border-radius: 0.875rem;
     padding: 0.2rem 1rem 2rem;
     border: rgb(13, 14, 14) 2px; 
     background-color: rgb(195, 202, 209);
     margin: 3px 3px 3px 3px; 
-    opacity: .95;
+    opacity: .70;
   
   }
   .comment-form {

@@ -9,7 +9,7 @@ const WrapperDiv = styled.div`
     grid-template-columns: repeat(2, 1fr);
     padding: 10px 10px 10px 10px;
     width: 800px;
-    height: auto;
+    min-height: 500px;
     margin: 0 auto;      
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -57,7 +57,7 @@ function ArticleCard ({props}) {
             <WrapperDiv>             
             
             <div className="oneCard">     
-                
+            <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading> </div> 
                 <StyledHeading>{props.date}</StyledHeading>
 
                 <StyledHeading2>{props.title}</StyledHeading2>
@@ -67,9 +67,9 @@ function ArticleCard ({props}) {
                 <StyledParagraph>{props.text}</StyledParagraph>
                 <img src="https://icon-library.net/images/person-icon-black/person-icon-black-21.jpg" height="20" width="auto" alt="#"></img>
                 <Link to={url}>View This Profile</Link>
-                 
+                
                 </div> 
-                <div><StyledHeading><img src={props.url} height="225" width="325" alt="#"></img></StyledHeading> </div>     
+                    
                 <div><CommentBox /></div>
                  
             </WrapperDiv>
