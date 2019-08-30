@@ -14,7 +14,7 @@ const WrapperDiv = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 7px; 
-    border: 2px black solid;
+    border: .5px darkgrey solid;
     &:hover {
 
         box-shadow: 2px 2px 2px 2px  rgb(240, 126, 126);
